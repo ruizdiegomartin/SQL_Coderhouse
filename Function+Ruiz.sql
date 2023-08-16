@@ -18,7 +18,7 @@ SELECT get_product_price(3);
 # FUNCTION 2
 DELIMITER $$
 CREATE FUNCTION `check_stock` (stock INT) RETURNS VARCHAR(55)
-# Esta función recibe el número de stock de un producto por parámetro y devuelve un aviso sobre la cantidad de stock. 
+# Esta función recibe por parámetro del nombre de un usuario, y devuelve el total de la última compra (si es que compró alguna vez, sino retorna nulo). 
 DETERMINISTIC
 BEGIN
 	CASE
